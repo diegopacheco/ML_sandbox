@@ -1,0 +1,18 @@
+{
+    "contents" : "iris2 <- iris\niris2$Species <- NULL\nkmeans.result <- kmeans(iris2,3)\nplot(iris2[c(\"Sepal.Length\",\"Sepal.Width\")], col = kmeans.result$cluster)\npoints(kmeans.result$centers[,c(\"Sepal.Length\",\"Sepal.Width\")],col=1:3,pch=8,cex=2)",
+    "created" : 1442038323837.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3727019386",
+    "id" : "5531C4CB",
+    "lastKnownWriteTime" : 1442038643,
+    "path" : "D:/diego/github/diego.pacheco/Diego-Pacheco-Sandbox/scripts/R/r-ml-fun/clustering_kmeans.r",
+    "project_path" : "clustering_kmeans.r",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 4,
+    "source_on_save" : true,
+    "type" : "r_source"
+}

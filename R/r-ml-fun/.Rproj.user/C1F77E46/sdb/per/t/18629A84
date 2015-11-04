@@ -1,0 +1,18 @@
+{
+    "contents" : "year <- rep(2012:2014, each=4)\nquarter <- rep(1:4,3)\ncpi <- c(162.2,164.6,166.5,166.0,166.2,167.0,168.6,169.5,171.0,172.1,173.3,174.0)\nplot(cpi,xaxt=\"n\",ylab=\"cpi\",xlab=\"\")\naxis(1,labels=paste(year,quarter,sep=\"Q\"),at=1:12,las=3)\nfit <- lm(cpi ~ year + quarter)\ndata2015 <- data.frame(year=2015,quarter=1:4)\ncpi2015 <- predict(fit,newdata = data2015)\nstyle  <- c(rep(1,12), rep(2,4))\n\n#\n# Different plot\n#\n\nplot(c(cpi,cpi2015),xaxt=\"n\", ylab=\"CPI\",xlab=\"\",pch=style,col=style)\naxis(1,at=1:16,las=3,labels=c(paste(year,quarter,sep=\"Q\"),\"2015q1\",\"2015q2\",\"2015q3\",\"2015q4\"))",
+    "created" : 1442037442241.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1494255914",
+    "id" : "18629A84",
+    "lastKnownWriteTime" : 1442038159,
+    "path" : "D:/diego/github/diego.pacheco/Diego-Pacheco-Sandbox/scripts/R/r-ml-fun/linear_regression.r",
+    "project_path" : "linear_regression.r",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : true,
+    "type" : "r_source"
+}

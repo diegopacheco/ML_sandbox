@@ -1,0 +1,18 @@
+{
+    "contents" : "set.seed(1234)\nind <- sample(2, nrow(iris),replace=TRUE, prob=c(0.7,0.3))\ntrainData <- iris[ind==1,]\ntestData <- iris[ind==2,]\nlibrary(party)\nmyFormula <- iris$Species ~ iris$Sepal.Length + iris$Sepal.Width + iris$Petal.Length + iris$Petal.Width\niris_ctree <- ctree(myFormula, data=trainData)\ntestPred <- predict(iris_ctree, newdata = testData)\n\n\nprint(iris_ctree)\nplot(iris_ctree,type=\"simple\")\n",
+    "created" : 1442034167699.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4000545848",
+    "id" : "D6E4503D",
+    "lastKnownWriteTime" : 1442036294,
+    "path" : "D:/diego/github/diego.pacheco/Diego-Pacheco-Sandbox/scripts/R/r-ml-fun/decision_tree.r",
+    "project_path" : "decision_tree.r",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : true,
+    "type" : "r_source"
+}

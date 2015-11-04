@@ -1,0 +1,18 @@
+{
+    "contents" : "idx <- sample(1:dim(iris)[1],40)\nirisSample <- iris[idx,]\nirisSample$Species <- NULL\nhc <- hclust(dist(irisSample),method=\"ave\")\nplot(hc,hang=-1,labels=iris$Speciesp[idx])\n# Cuting into 3 clusters only\nrect.hclust(hc,k=3)\ngroups <- cutree(hc,k=3)",
+    "created" : 1442038869152.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2312767846",
+    "id" : "D18ADB7A",
+    "lastKnownWriteTime" : 1442039182,
+    "path" : "D:/diego/github/diego.pacheco/Diego-Pacheco-Sandbox/scripts/R/r-ml-fun/hierarchial_clustering.r",
+    "project_path" : "hierarchial_clustering.r",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 5,
+    "source_on_save" : true,
+    "type" : "r_source"
+}

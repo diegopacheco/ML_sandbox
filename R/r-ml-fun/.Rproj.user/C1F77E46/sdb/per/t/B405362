@@ -1,0 +1,18 @@
+{
+    "contents" : "set.seed(3147)\nx <- rnorm(100)\ny <- rnorm(100)\nsummary(x)\nsummary(y)\n\nboxplot.stats(x)$out\nboxplot(x)\n\ndf <- data.frame(x,y)\nrm(x,y)\n\nattach(df)\n( a <- which(x %in% boxplot.stats(x)$out) )\n( b <- which(y %in% boxplot.stats(y)$out) )\ndetach(df)\n\n(outlier.list <- union(a,b))\nplot(df)\npoints(df[outlier.list,], col = \"blue\", pch = \"x\", cex=2)",
+    "created" : 1442039371212.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2843524053",
+    "id" : "B405362",
+    "lastKnownWriteTime" : 1442039945,
+    "path" : "D:/diego/github/diego.pacheco/Diego-Pacheco-Sandbox/scripts/R/r-ml-fun/outliar_detection.r",
+    "project_path" : "outliar_detection.r",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 6,
+    "source_on_save" : true,
+    "type" : "r_source"
+}

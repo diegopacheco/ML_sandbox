@@ -1,0 +1,18 @@
+{
+    "contents" : "ind <- sample(2,nrow(iris), replace = TRUE, prob=c(0.7,0.3))\ntrainData <- iris[ind==1,]\ntestData <- iris[ind==2,]\nlibrary(randomForest)\n\nrf <- randomForest(Species ~ . , data = trainData, ntree=100, proximity=TRUE)\n\nprint(rf)\nplot(rf)\n\n\n",
+    "created" : 1442036298899.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "529231957",
+    "id" : "6B7D0130",
+    "lastKnownWriteTime" : 1442037393,
+    "path" : "D:/diego/github/diego.pacheco/Diego-Pacheco-Sandbox/scripts/R/r-ml-fun/random_forrest.r",
+    "project_path" : "random_forrest.r",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

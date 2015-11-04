@@ -1,0 +1,18 @@
+{
+    "contents" : "library(kernlab)\ndata(cars)\nplot(cars$speed,cars$dist)\nmodel<- rvm(cars$speed,cars$dist)\nytest<- predict(model,cars$speed)\nlines(cars$speed,ytest,col=\"red\")\nmodels2<-rvm(cars$speed,cars$dist,cross=6,fit=T,interactions=1,tol=0.01)\nytest <- predict(models2,cars$speed)  \nlines(cars$speed,ytest,col=\"yellow\")",
+    "created" : 1442040566336.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "887373600",
+    "id" : "6997591C",
+    "lastKnownWriteTime" : 1442040859,
+    "path" : "D:/diego/github/diego.pacheco/Diego-Pacheco-Sandbox/scripts/R/r-ml-fun/rvm.r",
+    "project_path" : "rvm.r",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 8,
+    "source_on_save" : true,
+    "type" : "r_source"
+}

@@ -1,0 +1,18 @@
+{
+    "contents" : "#\n# Vars\n#\ni = 10\nf = 10.6\ns = \"Diego String\"\nb = TRUE\n\n#\n# Sequence\n#\ns1 = 1:10\n\n#\n# Vector\n#\nv1 = c(1,2,3,6)\n\n#\n# Functions\n#\ninc = function(v){ v + 1 }\ninc(5)\n\n#\n# Matrix\n#\nm = matrix(data = 1:10, nrow=5, ncol=5)\n\nmm1 = matrix(1:4,2,2)\nmm2 = matrix(1:4,2,2)\nmm1 == mm2\nidentical(mm1,mm2)\n\n#\n# Lists\n#\nl = list(1,10,100,500)\n\n#\n# Factors\n# \nfactors = factor(c(\"MALE\",\"FEMALE\",\"MALE\",\"FEMALE\"))\nlevels(factors)\nunclass(factors)\n\n#\n# Data Frame\n#\ndf = data.frame(\n  Name = c(\"CAT\",\"DOG\",\"PIG\",\"LION\"),\n  HowMany = c(2,1,0,3),\n  isPet = c(TRUE,TRUE,FALSE,FALSE)\n)\n\n# col - row\ndf[1,1]\n# row\ndf[1,]\n# cols\ndf[,1]\n# name \ndf[[\"Name\"]]\n# shortcut\ndf$Name\n# sub framing\ndf[c(2,4),]\n# kinda of queries\ndf[df$isPet==TRUE,]\ndf[df$HowMany>=2,]\ndf[df$Name %in% c(\"CAT\",\"ALIGATTOR\"),]\n\n#\n# R is a vectorized lang\n#\n1 + 2 \nc(1,2,3) + c(4,5,6)\n\n# HELP\n?c\n\n",
+    "created" : 1442204644773.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "630787968",
+    "id" : "8B9F9AC2",
+    "lastKnownWriteTime" : 1442206044,
+    "path" : "D:/diego/github/diego.pacheco/Diego-Pacheco-Sandbox/scripts/R/basic_constructs_r/basics.r",
+    "project_path" : "basics.r",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : true,
+    "type" : "r_source"
+}
