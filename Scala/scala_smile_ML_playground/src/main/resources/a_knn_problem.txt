@@ -1,0 +1,11 @@
+Labeling ISPs based on their down/upload speed (K-NN using Smile in Scala)
+
+The goal of this section is to use the K-Nearest Neighbours (K-NN) Algorithm to classify download/upload speed 
+pairs as internet service provider (ISP) Alpha (represented by 0) or Beta (represented by 1). 
+
+The idea behind K-NN is as follows: given a set of points that are classified, you can classify 
+the new point by looking at its K neighbours (K being a positive integer). 
+
+The idea is that you find the K-neighbours by looking at the euclidean distance between 
+the new point and its surrounding points. For these neighbours you then look at the biggest 
+representative class and assign that class to the new point.

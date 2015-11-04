@@ -13,3 +13,6 @@ resolvers += "Sonatype snapshots" at "https://oss.sonatype.org/content/repositor
 resolvers += "Twitter Repo" at "http://maven.twttr.com/"
 
 libraryDependencies += "com.github.haifengl" % "smile-core" % "1.0.3"
+libraryDependencies += "com.github.haifengl" % "smile-plot" % "1.0.3"
+libraryDependencies += "org.scala-lang.modules" % "scala-swing_2.11" % "2.0.0-M2"
+
