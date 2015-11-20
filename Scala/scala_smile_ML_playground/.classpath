@@ -11,6 +11,7 @@
   <classpathentry kind="lib" path="C:\Users\diego\.ivy2\cache\com.github.haifengl\smile-plot\jars\smile-plot-1.0.3.jar"/>
   <classpathentry kind="lib" path="C:\Users\diego\.ivy2\cache\org.swinglabs.swingx\swingx-all\jars\swingx-all-1.6.4.jar"/>
   <classpathentry kind="lib" path="C:\Users\diego\.ivy2\cache\org.scala-lang.modules\scala-swing_2.11\bundles\scala-swing_2.11-2.0.0-M2.jar"/>
+  <classpathentry kind="lib" path="C:\Users\diego\.ivy2\cache\com.github.tototoshi\scala-csv_2.11\jars\scala-csv_2.11-1.2.2.jar"/>
   <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
   <classpathentry kind="output" path="bin"/>
 </classpath>

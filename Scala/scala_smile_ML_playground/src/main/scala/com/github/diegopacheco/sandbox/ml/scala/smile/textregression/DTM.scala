@@ -5,6 +5,8 @@ import scala.collection.mutable
 
 class DTM {
   
+  val basePath = new File(".").getCanonicalPath  + "/src/main/resources/"
+  
   val records: mutable.MutableList[DTMRecord] = mutable.MutableList[DTMRecord]()
   val wordList: mutable.Set[String] = mutable.Set[String]()
   val stopWords = getStopWords
@@ -23,7 +25,7 @@ class DTM {
   }
 
   def getStopWords: List[String] = {
-    val source = scala.io.Source.fromFile(new File("/Users/mikedewaard/MachineLearning/Example Data/stopwords.txt"))("latin1")
+    val source = scala.io.Source.fromFile(new File(basePath + "stopwords.txt"))("latin1")
     val lines = source.mkString.split("\n")
     source.close()
     lines.toList

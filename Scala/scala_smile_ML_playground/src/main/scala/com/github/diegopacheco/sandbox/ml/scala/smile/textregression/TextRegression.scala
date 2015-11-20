@@ -11,9 +11,10 @@ import scala.swing._
 
 
 object TextRegression extends App {
+    
+    val basePath = new File(".").getCanonicalPath  + "/src/main/resources/TextRegression.csv"
   
    //Get the example data
-    val basePath = "/users/mikedewaard/MachineLearning/Example Data/TextRegression_Example_4.csv"
     val testData = GetDataFromCSV(new File(basePath))
 
     //Create a document term matrix for the data
