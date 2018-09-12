@@ -1,0 +1,17 @@
+python3.6 code/retrain.py \
+--image_dir=./fotos/ \
+--output_graph=./model/output_graph.pb \
+--output_labels=./model/output_labels.txt
+
+ ~2GB images
+ ~??? to train on CPU
+ ~??? model file (after training)
+
+python3 code/label_image.py \
+--graph=./model/output_graph.pb \
+--labels=./model/output_labels.txt \
+--input_layer=Placeholder \
+--output_layer=final_result \
+--image=./model/fotos/bms45cb/602c7cb290927da7f2998ce75a224fec.png
+
+~??? to run on CPU

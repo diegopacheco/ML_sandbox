@@ -1,0 +1,13 @@
+python3.6 code/retrain.py \
+--image_dir=./photos/ \
+--output_graph=./model/output_graph.pb \
+--output_labels=./model/output_labels.txt
+
+python3 code/label_image.py \
+--graph=./model/output_graph.pb \
+--labels=./model/output_labels.txt \
+--input_layer=Placeholder \
+--output_layer=final_result \
+--image=photos/daisy/21652746_cc379e0eea_m.jpg
+
+~??? to run on CPU
